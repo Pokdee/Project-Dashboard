@@ -19,26 +19,26 @@
           <h3 class="side_heading">Dashboard</h3>
         </div>
         <nav class="nav">
-          <ul>
+          <ul class="nav_ul">
             <li class="nav_li">
               <img class="icon" src="./icons/home.svg" alt="home_icon" />
-              home
+              <span class="li_text">home</span>
             </li>
             <li class="nav_li">
               <img class="icon" src="./icons/profile.svg" alt="profile" />
-              Profile
+              <span class="li_text">Profile</span>
             </li>
             <li class="nav_li">
               <img class="icon" src="./icons/msg.svg" alt="message" />
-              messages
+              <span class="li_text"> messages</span>
             </li>
             <li class="nav_li">
               <img class="icon" src="./icons/history.svg" alt="history" />
-              history
+              <span class="li_text">history</span>
             </li>
             <li class="nav_li">
               <img class="icon" src="./icons/tasks.svg" alt="tasks" />
-              Tasks
+              <span class="li_text">Tasks</span>
             </li>
             <li class="nav_li">
               <img
@@ -46,25 +46,56 @@
                 src="./icons/communitites.svg"
                 alt="communitites"
               />
-              communitites
+              <span class="li_text">communitites</span>
             </li>
             <li class="nav_li">
               <img class="icon" src="./icons/setting.svg" alt="Setting" />
-              Setting
+              <span class="li_text">Setting</span>
             </li>
             <li class="nav_li">
               <img class="icon" src="./icons/support.svg" alt="support" />
-              Support
+              <span class="li_text">Support</span>
             </li>
             <li class="nav_li">
               <img class="icon" src="./icons/privacy.svg" alt="Privacy" />
-              Privacy
+              <span class="li_text">Privacy</span>
             </li>
           </ul>
         </nav>
       </div>
 
-      <main class="main"></main>
+      <div class="container_main">
+        <header class="header">
+          <form class="search" action="">
+            <img src="./icons/magnify.svg" class="search_icon icon" alt="" />
+            <input type="text" class="search_field" />
+          </form>
+          <div class="profile_con">
+            <img
+              src="./icons/bell-ring-outline.svg"
+              class="bell_icon icon"
+              alt=""
+            />
+            <div class="user_info">
+              <img src="./image/panda.webp" class="pic" alt="profile_pic" />
+              <h3 class="name">KungFu Panda</h3>
+            </div>
+          </div>
+          <div class="user_intro">
+            <img src="./image/panda.webp" alt="profile_pic" />
+            <h4 class="user_intro_text">
+              Hi there,<br />
+              <span class="user_name">KungFu Panda(@panda)</span>
+            </h4>
+          </div>
+          <div class="manage_btn">
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+          </div>
+        </header>
+        <main class="main"></main>
+      </div>
     </div>
   </body>
 </html>

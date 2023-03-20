@@ -16,9 +16,6 @@ body {
   display: grid;
   grid-template-columns: 12.5rem 1fr;
 }
-.main {
-  background-color: gray;
-}
 
 /*side bar*/
 .sidebar {
@@ -30,19 +27,40 @@ body {
 
 .head_con {
   grid-area: 1/2/2/3;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+
   align-items: center;
-  justify-content: flex-start;
-  gap: 0.5rem;
+  justify-items: center;
+  grid-gap: 1rem;
+}
+.side_heading {
+  justify-self: start;
 }
 .nav {
   grid-area: 2/2/3/3;
+}
+
+.nav_ul {
   display: grid;
-  grid-template-columns: 2.5 1fr;
-  grid-template-rows: repeat(9, 2rem);
+  grid-template-columns: 3rem 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  grid-row-gap: 0.5rem;
 }
 .nav_li {
   list-style: none;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+.li_text {
+  justify-self: start;
+  text-transform: capitalize;
 }
 
 .dash_icon {
@@ -50,4 +68,81 @@ body {
 }
 .icon {
   width: 1.8rem;
+}
+
+/*Main content*/
+.container_main {
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-rows: 7rem 1fr;
+}
+img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+}
+
+/*Header*/
+.header {
+  grid-row: 1/2;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 2rem 70% 1fr 2rem;
+  grid-template-rows: 3rem 1fr;
+}
+
+/*Searchbar*/
+.search {
+  grid-area: 1/2/2/3;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.search_field {
+  flex: 0 0 85%;
+  height: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  text-indent: 1rem;
+}
+.search_icon {
+  margin-right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/*Profile_container*/
+.profile_con {
+  grid-area: 1/3/2/4;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+.profile_info {
+  flex: 0 0 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pic {
+  display: block;
+  width: 1rem;
+}
+.name {
+  display: block;
+}
+
+.user_intro {
+  grid-area: 2/2/3/3;
+  display: flex;
+}
+.manage_btn {
+  grid-area: 2/3/3/4;
+  display: flex;
+}
+/*Main*/
+.main {
+  grid-row: 2/3;
 }
