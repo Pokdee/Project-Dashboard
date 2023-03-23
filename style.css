@@ -5,12 +5,15 @@
 }
 html {
   font-size: 16px;
-  font-family: "Coiny", cursive;
-  font-family: "Sono", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
   width: 100%;
-  height: 35rem;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .container {
   width: 100%;
@@ -89,7 +92,7 @@ img {
   grid-row: 1/2;
   background-color: bisque;
   display: grid;
-  grid-template-columns: 1.5rem 65% 1fr 1.5rem;
+  grid-template-columns: 3rem 65% 1fr 3rem;
   grid-template-rows: 3rem 1fr;
 }
 
@@ -113,10 +116,7 @@ img {
   width: 1.5rem;
   height: 1.5rem;
 }
-.bell_icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
+
 /*Profile_container*/
 .profile_con {
   grid-area: 1/3/2/4;
@@ -125,10 +125,16 @@ img {
   justify-content: end;
   gap: 1rem;
 }
+.bell_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: auto;
+}
 .user_info {
-  flex: 0 0 80%;
+  flex: 0 0 50%;
+  justify-self: flex-end;
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
   align-items: center;
   gap: 1rem;
 }
@@ -162,8 +168,8 @@ img {
   grid-area: 2/3/3/4;
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 1rem;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 .btn {
   width: 4rem;
@@ -175,4 +181,77 @@ img {
 /*Main*/
 .main {
   grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  background-color: #e2e8f0;
 }
+
+/*Project Con*/
+
+.proj_con {
+  grid-area: 1/1/2/2;
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+}
+.con_head {
+  grid-area: 1/1/2/4;
+  align-self: center;
+  justify-self: center;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+  font-family: inherit;
+}
+.project {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.proj_head {
+  display: block;
+  width: 90%;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.proj_detail {
+  display: block;
+  width: 90%;
+  font-family: sans-serif;
+
+  font-size: 1rem;
+  flex: 0 0 30%;
+  font-size: 1rem;
+}
+.clicks {
+  width: 90%;
+
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.clicks > img:last-child {
+  margin-right: 1.3rem;
+}
+.click_icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/*Anno*/
+.anno_trend {
+  grid-area: 1/2/2/3;
+  /* background-color: yellowgreen; */
+}
+
+/* .anno_con {
+  background-color: blue;
+}
+.trend_con {
+} */
