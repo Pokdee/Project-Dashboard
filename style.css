@@ -75,7 +75,7 @@ body {
 .container_main {
   background-color: #e2e8f0;
   display: grid;
-  grid-template-rows: 7rem 1fr;
+  grid-template-rows: 7rem 1fr 3rem;
 }
 img {
   display: block;
@@ -319,4 +319,5 @@ img {
 .trend_name {
 }
 .nickname {
+  color: #636363;
 }
